@@ -19,13 +19,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {foreach from=$Usuario item = Usuario}
+                    {foreach from=$Usuario item }
                     <tr>
                         <td>{$Usuario['id_usuario']}</td>
                         <td>{$Usuario['Nombre']}</td>
                         <td>{$Usuario['Apellido']}</td>
-                        <td>{$Usuario['E_mail]}</td>
-                        <td>{$Usuario['Cantidada']}</td>
+                        <td>{$Usuario['e_mail']}</td>
+                        <td>{$Usuario['cant']}</td> // linea para comentar
                     </tr>
                     {/foreach}
                 </tbody>
