@@ -11,8 +11,8 @@ class View
     $this->smarty = new Smarty();
     $this->smarty->assign('titulo', 'Trabajo de bases');
   }
-  function mostrarIndex($Usuario){
-    $this->smarty->assign('usuario', $Usuario);
+  function mostrarIndex($Usuarios){
+    $this->smarty->assign('usuario', $Usuarios);
     $this->smarty->display('templates/index.tpl');
   }
 }

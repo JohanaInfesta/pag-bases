@@ -19,17 +19,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {foreach from=$Usuario item }
-                    <tr>
-                        <td>{$Usuario['id_usuario']}</td>
-                        <td>{$Usuario['Nombre']}</td>
-                        <td>{$Usuario['Apellido']}</td>
-                        <td>{$Usuario['e_mail']}</td>
-                        <td>{$Usuario['cant']}</td> // linea para comentar
-                    </tr>
+                    {foreach from=$usuario item = user }
+                        <tr>
+                            <th>{$user['id_usuario']}</th>
+                            <td>{$user['nombre']}</td>
+                            <td>{$user['apellido']}</td>
+                            <td>{$user['e_mail']}</td>
+                            <td></td>
+                        </tr>
                     {/foreach}
                 </tbody>
             </table>
         </div>
     </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </html>

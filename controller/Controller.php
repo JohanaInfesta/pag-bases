@@ -14,8 +14,8 @@ class Controller
   }
 
   public function index(){
-    $Usuario = $this->a_model->getUsuarios();
-    $this->view->mostrarIndex($Usuario);
+    $Usuarios = $this->a_model->getUsuarios();
+    $this->view->mostrarIndex($Usuarios);
   }
 }
 
