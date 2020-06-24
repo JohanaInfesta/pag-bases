@@ -25,7 +25,7 @@
                             <td>{$user['nombre']}</td>
                             <td>{$user['apellido']}</td>
                             <td>{$user['e_mail']}</td>
-                            <td></td>
+                            <td>{count($eventos['id_evento'])}</td>
                         </tr>
                     {/foreach}
                 </tbody>

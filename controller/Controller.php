@@ -17,6 +17,10 @@ class Controller
     $Usuarios = $this->a_model->getUsuarios();
     $this->view->mostrarIndex($Usuarios);
   }
+  public function eventos(){
+    $Eventos = $this->a_model->cantEventos();
+    $this->view->cantEventos($Eventos);
+  }
 }
 
 ?>

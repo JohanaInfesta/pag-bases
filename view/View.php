@@ -15,5 +15,9 @@ class View
     $this->smarty->assign('usuario', $Usuarios);
     $this->smarty->display('templates/index.tpl');
   }
+  function cantEventos($Eventos){
+    $this->smarty->assign('eventos', $eventos);
+    $this->smarty->display('templates/index.tpl');
+  }
 }
 ?>
