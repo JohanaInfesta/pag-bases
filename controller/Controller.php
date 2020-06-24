@@ -15,12 +15,13 @@ class Controller
 
   public function index(){
     $Usuarios = $this->a_model->getUsuarios();
-    $this->view->mostrarIndex($Usuarios);
-  }
-  public function eventos(){
     $Eventos = $this->a_model->cantEventos();
-    $this->view->cantEventos($Eventos);
+    $this->view->mostrarIndex($Usuarios, $Eventos);
   }
+ // public function eventos(){
+ //   $Eventos = $this->a_model->cantEventos();
+//    $this->view->cantEventos($Eventos);
+ // }
 }
 
 ?>

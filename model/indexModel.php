@@ -14,8 +14,8 @@
       //      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
       //  }
         function cantEventos(){
-            $sentence =$this->db->prepare('SELECT count(*) FROM unc_248998.g09_evento e JOIN
-                unc_248998.g09_usuario u on u.id_usuario = e.id_usuario ORDER BY u.id_usuario DESC' );
+            $sentence =$this->db->prepare('SELECT * FROM unc_248998.g09_evento e, unc_248998.g09_usuario u
+            WHERE e.id_usuario = u.id_usuario ORDER BY u.id_usuario DESC' );
             $sentence->execute();
             return $sentence->fetchAll(PDO::FETCH_ASSOC);
         }
