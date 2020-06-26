@@ -15,7 +15,13 @@ class Controller
 
   public function index(){
     $Usuarios = $this->a_model->getUsuarios();
-    $this->view->mostrarIndex($Usuarios);
+    $UsuarioBusqueda = $this->a_model->getBusquedaUsuario();
+    $this->view->mostrarIndex($Usuarios, $UsuarioBusqueda);
+  }
+  public function getEventosUsuario(){
+    $id_usuario = $_POST['id_usuario'];
+    $evento = $this->a_model->getEventos($id_usuario);
+    $this->view->mostrarEventos($evento);
   }
 
 }

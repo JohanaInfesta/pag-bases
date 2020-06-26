@@ -1,0 +1,31 @@
+body{
+    background-color: black !important;
+}
+.title-top{
+    text-align: center;
+}
+
+.topten{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+tr th, tr td{
+    text-align: center;
+    border: 1px solid white;
+}
+.name, .surname{
+    width: 80px;
+}
+.title-top, tr th, tr td{
+    color: #CD6155 ; 
+}
+.busqueda{
+    margin-top: 50px;
+    position: absolute;
+}
+.info, .btn, .dropdown-toggle{
+    color: #AF7AC5 !important ;
+}
+.btn{
+    border-color: #AF7AC5 !important ;
+}
