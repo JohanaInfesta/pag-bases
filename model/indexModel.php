@@ -18,12 +18,13 @@
             return $sentence->fetchAll(PDO::FETCH_ASSOC);
         }
         function getEventos($id_usuario){
-            $sentence = $this->db->prepare('SELECT nombre, apellido, id_evento, count(nro_edicion) as cantEvento 
-            from fn_gr09_listado_eventos_para_usuarioX(1)
+            $sentence = $this->db->prepare('SELECT nombre, apellido, id_evento, count(nro_edicion) as cant
+            from unc_248998.FN_GR09_LISTADO_EVENTO_PARA_USUARIOX(?)
             group by nombre, apellido, id_evento
-            order by count(nro_edicion)');
+            order by cant');
             $sentence->execute([$id_usuario]);
             return $sentence->fetchAll(PDO::FETCH_ASSOC);
+            
         }
     }
 ?>

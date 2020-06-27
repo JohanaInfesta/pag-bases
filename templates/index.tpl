@@ -38,7 +38,7 @@
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuLink" data-toggle = "dropdown" aria-haspopup="true" aria-expanded ="false">Usuario</button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="usuario">
                     {foreach from=$usuarioBusqueda item=busqueda}
-                        <a class="dropdown-item" href="#" onclick="navigatePost('http://localhost/pag-bases/busquedaUsuario.tpl', {ldelim}id_usuario:{$busqueda['id_usuario']}{rdelim})">
+                        <a class="dropdown-item" href="#" onclick="navigatePost('http://localhost/pag-bases/busquedaUsuario', {ldelim}id_usuario:{$busqueda['id_usuario']}{rdelim})">
                             {$busqueda['id_usuario']} {$busqueda['nombre']} {$busqueda['apellido']}
                         </a>
                     {/foreach}

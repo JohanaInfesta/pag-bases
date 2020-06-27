@@ -1,6 +1,6 @@
         <div>
-            <h2>Eventos del usuario: {$busqueda['nombre']} {$busqueda['apellido']}</h2>
-            <table>
+            <h2 class="title-top">Eventos del usuario:</h2>
+            <table class="topten">
                 <thead>
                     <tr>
                         <th>Nombre</th>
@@ -10,12 +10,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {foreach from=$evento item = eventos }
+                    {foreach from=$evento item = event }
                         <tr>
-                            <td>{$eventos['nombre']}</td>
-                            <td>{$eventos['apellido']}</td>
-                            <td>{$eventos['id_evento']}</td>
-                            <td>{$eventos['cant']}</td>
+                            <td>{$event['nombre']}</td>
+                            <td>{$event['apellido']}</td>
+                            <td>{$event['id_evento']}</td>
+                            <td>{$event['cant']}</td>
                         </tr>
                     {/foreach}
                 </tbody>

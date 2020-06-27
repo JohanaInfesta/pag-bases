@@ -18,7 +18,7 @@ class View
     $this->smarty->display('templates/index.tpl');
   }
   function mostrarEventos($evento){
-    $this->smarty->assgn('evento', $evento);
+    $this->smarty->assign('evento', $evento);
     $this->smarty->display('templates/busquedaUsuario.tpl');
   }
 
